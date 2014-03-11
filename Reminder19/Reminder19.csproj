@@ -1,0 +1,238 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{98705501-B459-47D7-98A3-CA4E6386180B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Reminder19</RootNamespace>
+    <AssemblyName>Reminder19</AssemblyName>
+    <ApplicationIcon>Reminder19.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.SQLite, Version=1.0.48.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=x86" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="src\AdvancedSchedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\AdvancedSchedule.Designer.cs">
+      <DependentUpon>AdvancedSchedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\Alert.cs" />
+    <Compile Include="src\AlertDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\AlertDialog.designer.cs">
+      <DependentUpon>AlertDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\AlertSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\AlertSearch.Designer.cs">
+      <DependentUpon>AlertSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\AlertsListViewSorter.cs" />
+    <Compile Include="src\cntrmsgbox\CbtHook.cs" />
+    <Compile Include="src\cntrmsgbox\DialogBox.cs" />
+    <Compile Include="src\cntrmsgbox\Win32API.cs" />
+    <Compile Include="src\cntrmsgbox\WindowsHook.cs" />
+    <Compile Include="src\cntrmsgbox\WndProcRetHook.cs" />
+    <Compile Include="src\Controller.cs" />
+    <Compile Include="src\messageboxes\MaxAlertPopUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\messageboxes\MaxAlertPopUp.Designer.cs">
+      <DependentUpon>MaxAlertPopUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\messageboxes\RegisterPopUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\messageboxes\RegisterPopUp.Designer.cs">
+      <DependentUpon>RegisterPopUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\messageboxes\SelectCommandPopUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\messageboxes\SelectCommandPopUp.Designer.cs">
+      <DependentUpon>SelectCommandPopUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\Options.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\Options.Designer.cs">
+      <DependentUpon>Options.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\RegisterDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\RegisterDialog.Designer.cs">
+      <DependentUpon>RegisterDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\Registration.cs" />
+    <Compile Include="src\Reminder19.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\Reminder19.Designer.cs">
+      <DependentUpon>Reminder19.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\AdvancedSchedule.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AdvancedSchedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\AlertDialog.resx">
+      <DependentUpon>AlertDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\AlertSearch.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AlertSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\messageboxes\MaxAlertPopUp.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MaxAlertPopUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\messageboxes\RegisterPopUp.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>RegisterPopUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\messageboxes\SelectCommandPopUp.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SelectCommandPopUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\Options.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Options.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\RegisterDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>RegisterDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\Reminder19.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Reminder19.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\richtextbox\RichTextBoxExtended.resx">
+      <DependentUpon>RichTextBoxExtended.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\Setup.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Setup.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="src\richtextbox\RichTextBoxExtended.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="src\Scheduler.cs" />
+    <Compile Include="src\Setup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\Setup.Designer.cs">
+      <DependentUpon>Setup.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="lib\System.Data.SQLite.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reminder19.ico" />
+    <Content Include="sounds\chimes.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="IWshRuntimeLibrary">
+      <Guid>{F935DC20-1CF0-11D0-ADB9-00C04FD58A0B}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

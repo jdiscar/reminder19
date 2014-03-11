@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="textBox1.Text" xml:space="preserve">
+    <value>The advanced schedule is specially formatted text that translates into a schedule.  All schedules in Reminder 19 can be expressed as an advanced schedule.  Using the advanced schedule directly allows much greater flexibility than the other schedule options allow.  This help menu also provides graphical help, found in the other two tabs, for generating an advanced field.  There are two textual formats for the advanced schedule.
+
+The advanced schedule by "Dates and Times" tab specifies a schedule that produces an alert when a specific combination of date and time is met, such as whenever the day of the month is 28, or whenever it's a Monday, or whenever it's 5 o clock.  Conditions can be joined together, leading to alert possibilities that go off, for example, whenever it is 5 o'clock or 4 o'clock on a Monday.
+
+The Advanced Schedule by "Time Delay" tab specifies a schedule that produces an alert every time a certain amount of minutes pass from a start date.  This allows the creation of alerts that go off every half hour (30 minutes) from right now or every two weeks (1209600 minutes) from 5:00PM tomorrow.
+
+Details and help for the two advanced formats are as follows:
+
+
+Format 1: Advanced Schedule By Dates and Times
+  +------------------ minute (0 - 59)
+  | +--------------- hour (0 - 23)
+  | | +------------ day of month (0 - 31)
+  | | | +--------- month (1 - 12)
+  | | | | +------ year (number between 1700 and 9999)
+  | | | | | +--- dayOfWeek (0 - 7, 10-17, 20-27, 30-37, 40-47)
+  | | | | | | + optional command ([command] ? [arguments])
+  * * * * * * *
+
+Each of the patterns from the first six fields may be either a single in range number, * (the asterisk character, which means the field matches all legal values), or a list of in range numbers separated by commas (such as 2,3). There may be no spaces following commas and fields may not end with a comma.  There is also an optional special seventh field.
+
+The hour field (field 1) is specified using the 24-hour format.  0 is 12 AM, 4 is 4 AM, and 15 is 3 PM.
+
+The month field (field 4) is defined as a number, where 1 is January and 11 is November.  Alerts will not be shown for non existent days, such as September 31.  Please note that an alert will not show on September 30 instead.
+
+For the day of the week field (field 6), both 0 and 7 are considered Sunday.  The dayOfWeek field can be two digits, where the first digit represents its position in the month and the second digit is the day of the week.  For example, 31 would mean the third Monday of every month.  A position of 0 means every postion, so 03 means every Wednesday.  In deciding the next wake up time between, for example, the 1st and 31st, the soonest wake up date is chosen.
+
+An alert is shown when the time/date specification fields all match the current time and date. There is one exception: if both "day of month" and "day of week" are restricted (not "*"), then either the "day of month" field (field 3) or the "day of week" field (field 6) must match the current day (even though the other of the two fields need not match the current day).
+
+The command field (field 7) is completely optional.  If it is present, then the command will attempt to be executed through a command line interface.  The command itself is separated from its arguments by the first occurrence of the '?' character.  If you don't understand how to use this field, then simply never include it.  This field is the only optional field.
+
+Example 1:
+	00 16 1,2,31 2,3 2008 1,45
+	This alert specifies the following date and times:
+		February 1, 2008 at 4:00 PM
+		February 2, 2008 at 4:00 PM
+		February 4, 2008 at 4:00 PM (A Monday)
+		February 11, 2008 at 4:00 PM (A Monday)
+		February 18, 2008 at 4:00 PM (A Monday)
+		February 22, 2008 at 4:00 PM (The fourth Friday)
+		February 25, 2008 at 4:00 PM (A Monday)
+		March 1, 2008 at 4:00 PM
+		March 2, 2008 at 4:00 PM
+		March 3, 2008 at 4:00 PM (A Monday)
+		March 10, 2008 at 4:00 PM (A Monday)
+		March 17, 2008 at 4:00 PM (A Monday)
+		March 24, 2008 at 4:00 PM (A Monday)
+		March 28, 2008 at 4:00 PM (The fourth Friday)
+		March 31, 2008 at 4:00 PM (The 31st and a Monday)
+
+Example 2:
+	00 4,16 * * * * "C:\Program Files\Internet Explorer\IEXPLORE.EXE" ? http://www.google.com
+	Every day at 4 AM and 4 PM, an instance of Internet Explorer will be launched that navigates to http://www.google.com.
+	
+	
+Format 2: Advanced Schedules by Time Delays
+  +------------------ the start minute (0 - 59)
+  | +--------------- the start hour (0 - 23)
+  | | +------------ the start day of month (0 - 31)
+  | | | +--------- the start month (1 - 12)
+  | | | | +------ the start year (number between 1700 and 9999)
+  | | | | | +--- increment in minutes (+[number of minutes to delay])
+  | | | | | | + command ([command] ? [arguments])
+  * * * * * * * 
+
+No field in this format may be * (an asterisk character.)  Field 7 (the command field) is optional, but all other fields must be defined.
+
+Each of the first 5 fields must be a single number in the specified ranges.  They will be used to define the start date.
+
+The hour field is specified using the 24-hour format.  0 is 12 AM, 4 is 4 AM, and 15 is 3 PM.
+
+The months are defined as number, where 1 is January and 11 is November.
+
+For "increment in minutes" field (field 6), a non-negative number must be specified, prefixed by a '+' character.  The number represents the number of minutes to wait between alerts.  For example, +59 means that the alert will be triggered every 59 minutes after the start date.
+
+The command field (field 7) is completely optional.  If it is present, then the command will attempt to be executed.  The command itself is separated from its arguments with by the first occurrence of the '?' character.  If you don't understand how to use this field, then simply never include it.  This field is the only optional field.
+
+Example 1:
+	00 00 31 3 2008 +30
+	This alert will be shown every 30 minutes after March 31, 2008 at 12:00 AM.  So the first alert will go off at March 31, 2008 at 12:30 AM, the next alert will go off at March 31, 2008 at 1:00 AM, and so on.
+	
+Example 2:
+	00 00 31 3 2008 +60 "C:\Program Files\Internet Explorer\IEXPLORE.EXE" ? http://www.google.com 
+	This alert will be shown every 60 minutes (one hour) after March 31, 2008 at 12:00 AM.  So the first alert will go off at March 31, 2008 at 1:00 AM, the next alert will go off at March 31, 2008 at 2:00 AM, and so on.  Whenever an alert goes off, http://www.google.com will be launched in Internet Explorer.</value>
+  </data>
+  <data name="textBox8.Text" xml:space="preserve">
+    <value>Notice: Text values should be a comma delimited list.  If you read the text, it should be clear what you're doing.  Read commas (',') as the word 'or'.  Read asterisks ('*') as the phrase 'any valid value.'  Press the help button for more graphical help and for the field rules.</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAICAAAAEAIACoEAAAFgAAACgAAAAgAAAAQAAAAAEAIAAAAAAAAAAAABMLAAATCwAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKCgo/ygo
+        KP8oKCj/KCgo/ygoKP8oKCj/KCgo/ygoKP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKCgo/ygo
+        KP+EhIT/hISE/4SEhP+EhIT/hISE/4SEhP+EhIT/hISE/ygoKP8oKCj/KCgo/wAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAoKCj/KCgo/ygo
+        KP+EhIT/hISE/+Tk5P/k5OT/5OTk/+Tk5P/k5OT/5OTk/+Tk5P/k5OT/hISE/4SEhP+EhIT/KCgo/ygo
+        KP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKCgo/4SE
+        hP+EhIT/hISE/+Tk5P/k5OT/hISE/4SEhP8oKCj/KCgo/ygoKP8oKCj/KCgo/4SEhP/k5OT/5OTk/+Tk
+        5P+EhIT/hISE/ygoKP8oKCj/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAoKCj/hISE/4SEhP/k5OT/5OTk/ygoKP8oKCj/KCgo/4SEhP8oKCj/KCgo/ygoKP+EhIT/KCgo/ygo
+        KP/k5OT/5OTk/+Tk5P+EhIT/KCgo/ygoKP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAACgoKP+EhIT/hISE/+Tk5P/k5OT/KCgo/ygoKP8oKCj/hISE/ygoKP8oKCj/KCgo/4SE
+        hP8oKCj/KCgo/+Tk5P/k5OT/5OTk/4SEhP8oKCj/KCgo/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAoKCj/hISE/+Tk5P/k5OT/hISE/ygoKP+EhIT/5OTk/+Tk5P/k5OT/KCgo/ygo
+        KP8oKCj/5OTk/+Tk5P+EhIT/KCgo/ygoKP+EhIT/5OTk/4SEhP+EhIT/KCgo/wAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAACgoKP+EhIT/5OTk/+Tk5P8oKCj/hISE/+Tk5P/k5OT/5OTk/+Tk
+        5P/k5OT/5OTk/+Tk5P/k5OT/5OTk/+Tk5P+EhIT/hISE/ygoKP/k5OT/hISE/4SEhP8oKCj/AAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAoKCj/hISE/+Tk5P+EhIT/hISE/ygoKP/k5OT/5OTk/+Tk
+        5P/k5OT/5OTk/+Tk5P/k5OT/5OTk/+Tk5P/k5OT/5OTk/+Tk5P/k5OT/KCgo/4SEhP/k5OT/5OTk/4SE
+        hP8oKCj/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACgoKP+EhIT/5OTk/ygoKP8oKCj/hISE/+Tk
+        5P/k5OT/5OTk/+Tk5P/k5OT/5OTk/+Tk5P/k5OT/5OTk/+Tk5P/k5OT/5OTk/+Tk5P+EhIT/KCgo/+Tk
+        5P/k5OT/hISE/ygoKP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKCgo/4SEhP/k5OT/KCgo/ygo
+        KP+EhIT/5OTk/+Tk5P/k5OT/5OTk/+Tk5P/k5OT/5OTk/+Tk5P/k5OT/5OTk/+Tk5P/k5OT/5OTk/4SE
+        hP8oKCj/5OTk/+Tk5P+EhIT/KCgo/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAoKCj/5OTk/+Tk
+        5P8oKCj/KCgo/ygoKP8oKCj/5OTk/+Tk5P/k5OT/5OTk/ygoKP8oKCj/KCgo/+Tk5P/k5OT/5OTk/ygo
+        KP8oKCj/KCgo/ygoKP/k5OT/5OTk/+Tk5P8oKCj/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACgo
+        KP/k5OT/5OTk/ygoKP8oKCj/KCgo/ygoKP/k5OT/5OTk/+Tk5P/k5OT/hISE/4SEhP+EhIT/5OTk/+Tk
+        5P/k5OT/KCgo/ygoKP8oKCj/KCgo/+Tk5P/k5OT/5OTk/ygoKP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAKCgo/+Tk5P/k5OT/KCgo/ygoKP+EhIT/5OTk/+Tk5P/k5OT/5OTk/+Tk5P8oKCj/KCgo/ygo
+        KP/k5OT/5OTk/+Tk5P/k5OT/5OTk/4SEhP8oKCj/5OTk/+Tk5P/k5OT/KCgo/wAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAoKCj/5OTk/+Tk5P8oKCj/KCgo/4SEhP/k5OT/5OTk/+Tk5P/k5OT/5OTk/ygo
+        KP8oKCj/KCgo/+Tk5P/k5OT/5OTk/+Tk5P/k5OT/hISE/ygoKP/k5OT/5OTk/+Tk5P8oKCj/AAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAACgoKP+EhIT/5OTk/4SEhP+EhIT/KCgo/4SEhP/k5OT/5OTk/+Tk
+        5P/k5OT/KCgo/ygoKP8oKCj/5OTk/+Tk5P/k5OT/hISE/4SEhP8oKCj/hISE/+Tk5P/k5OT/hISE/ygo
+        KP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACgoKP/k5OT/5OTk/+Tk5P8oKCj/KCgo/4SE
+        hP+EhIT/hISE/+Tk5P8oKCj/KCgo/ygoKP/k5OT/hISE/4SEhP8oKCj/KCgo/ygoKP/k5OT/5OTk/+Tk
+        5P8oKCj/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKCgo/4SEhP/k5OT/5OTk/4SE
+        hP8oKCj/KCgo/4SEhP+EhIT/hISE/ygoKP8oKCj/KCgo/4SEhP+EhIT/KCgo/ygoKP8oKCj/hISE/+Tk
+        5P+EhIT/hISE/ygoKP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKCgo/+Tk
+        5P/k5OT/5OTk/4SEhP8oKCj/KCgo/ygoKP8oKCj/hISE/4SEhP+EhIT/KCgo/ygoKP8oKCj/hISE/4SE
+        hP/k5OT/5OTk/ygoKP8oKCj/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAoKCj/5OTk/+Tk5P/k5OT/hISE/ygoKP8oKCj/KCgo/ygoKP+EhIT/hISE/4SEhP8oKCj/KCgo/ygo
+        KP+EhIT/hISE/+Tk5P/k5OT/KCgo/ygoKP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAACgoKP+EhIT/hISE/+Tk5P/k5OT/5OTk/4SEhP+EhIT/KCgo/ygoKP8oKCj/KCgo/ygo
+        KP+EhIT/5OTk/+Tk5P/k5OT/5OTk/4SEhP8oKCj/KCgo/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAACgoKP8oKCj/KCgo/4SEhP/k5OT/5OTk/+Tk5P/k5OT/5OTk/+Tk
+        5P/k5OT/5OTk/+Tk5P/k5OT/hISE/4SEhP8oKCj/KCgo/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKCgo/ygoKP+EhIT/hISE/+Tk
+        5P/k5OT/5OTk/+Tk5P/k5OT/hISE/ygoKP8oKCj/KCgo/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACgo
+        KP8oKCj/hISE/ygoKP8oKCj/KCgo/4SEhP8oKCj/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAKCgo/ygoKP+EhIT/KCgo/ygoKP8oKCj/hISE/ygoKP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAACgoKP+EhIT/hISE/ygoKP/k5OT/5OTk/+Tk5P8oKCj/hISE/ygoKP8AAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAKCgo/+Tk5P/k5OT/hISE/ygoKP8oKCj/KCgo/4SEhP/k5OT/KCgo/wAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKCgo/ygoKP/k5OT/5OTk/+Tk5P/k5OT/5OTk/ygo
+        KP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACgoKP8oKCj/KCgo/ygo
+        KP8oKCj/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKCgo/ygo
+        KP8oKCj/KCgo/ygoKP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAA///////gH///gAP//AAA//gAAD/4AAA/+AAAP/AAAB/wAAAf4AAAD+AA
+        AA/gAAAP4AAAD+AAAA/gAAAP4AAAD+AAAA/wAAAf8AAAH/gAAD/4AAA/+AAAP/wAAP//gAP//+Af///g
+        H///wA///8AP///gH///+D////g///////8=
+</value>
+  </data>
+</root>

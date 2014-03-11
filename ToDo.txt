@@ -1,0 +1,8 @@
+Warn before exiting Options screen if the user has made unsaved changes.
+Warn before exiting Setup screen if the user has made unsaved changes.
+Warn before exiting advanced schedule screen if the user has made unsaved changes.
+Move schedule validation into the Scheduler class.
+Move the code to play sounds from AlertDialog to its own class.
+Comment the scheduler class.
+Add Exception handling to all controller methods.
+Add Exception handling to all button/menu item presses.
